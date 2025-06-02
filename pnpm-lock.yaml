@@ -163,6 +163,10 @@ catalogs:
 importers:
 
   .:
+    dependencies:
+      zone.js:
+        specifier: 'catalog:'
+        version: 0.15.1
     devDependencies:
       '@compodoc/compodoc':
         specifier: 'catalog:'

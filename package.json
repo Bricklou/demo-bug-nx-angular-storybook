@@ -4,6 +4,9 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
+  "dependencies": {
+    "zone.js": "catalog:"
+  },
   "devDependencies": {
     "@compodoc/compodoc": "catalog:",
     "@nx/storybook": "catalog:",

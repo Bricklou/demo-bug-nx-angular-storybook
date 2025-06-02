@@ -1,14 +1,8 @@
 {
   "name": "my-app",
   "version": "1.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build; node esbuild.mjs",
-    "watch": "ng build --watch --configuration development"
-  },
+  "scripts": {},
   "private": true,
-  "license": "ISC",
   "packageManager": "pnpm@10.11.0",
   "dependencies": {
     "my-lib": "workspace:*",
