@@ -1,0 +1,208 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "MyLibComponent",
+            "id": "component-MyLibComponent-5bec16f296694024bc9e3b400d5471581495821c0772c74c7976c66aac47b8ae5616c1fc8537ec69f25446f89c6d05750aece7e5fecf14ff37bb9f60f2aba539",
+            "file": "libs/my-lib/src/lib/my-lib.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-button",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./my-lib.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-button',\n  imports: [],\n  standalone: true,\n  templateUrl: './my-lib.component.html',\n  styleUrl: './my-lib.component.css',\n})\nexport class MyLibComponent {}\n",
+            "styleUrl": "./my-lib.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<button type=\"button\">\n  <ng-content/>\n  <span>My Lib Button</span>\n</button>\n"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n    args: {},\n    render: ({children, ...args}) => ({\n        props: args,\n        template: `<lib-button ${argsToTemplate(args)}>${children}</lib-button>`\n    })\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<RbButtonComponentWithChildren>",
+                "defaultValue": "{\n    component: MyLibComponent,\n    title: 'Demo/Button',\n    args: {\n        children: 'Button text'\n    },\n    argTypes: {\n        children: { control: 'text' },\n    },\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [
+            {
+                "name": "RbButtonComponentWithChildren",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 193
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<RbButtonComponentWithChildren>",
+                "file": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            }
+        ],
+        "enumerations": [],
+        "groupedVariables": {
+            "libs/my-lib/src/lib/my-lib.component.stories.tsx": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n    args: {},\n    render: ({children, ...args}) => ({\n        props: args,\n        template: `<lib-button ${argsToTemplate(args)}>${children}</lib-button>`\n    })\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<RbButtonComponentWithChildren>",
+                    "defaultValue": "{\n    component: MyLibComponent,\n    title: 'Demo/Button',\n    args: {\n        children: 'Button text'\n    },\n    argTypes: {\n        children: { control: 'text' },\n    },\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {
+            "libs/my-lib/src/lib/my-lib.component.stories.tsx": [
+                {
+                    "name": "RbButtonComponentWithChildren",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 193
+                },
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<RbButtonComponentWithChildren>",
+                    "file": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ]
+        }
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "RbButtonComponentWithChildren",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/my-lib/src/lib/my-lib.component.stories.tsx",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/my-lib/src/lib/my-lib.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MyLibComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

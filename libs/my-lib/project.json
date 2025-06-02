@@ -1,0 +1,91 @@
+{
+  "name": "my-lib",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/my-lib/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "cache": true,
+      "executor": "@nx/angular:package",
+      "outputs": ["{projectRoot}/dist/"],
+      "options": {
+        "project": "{projectRoot}/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "{projectRoot}/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "{projectRoot}/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "{projectRoot}/.storybook",
+        "browserTarget": "my-lib:build-storybook",
+        "compodoc": true,
+        "assets": ["{projectRoot}/src/assets"],
+        "compodocArgs": [
+          "-e",
+          "json",
+          "-d",
+          "{projectRoot}",
+          "-p {projectRoot}/tsconfig.json",
+          "--disablePrivate",
+          "--disableInternal",
+          "--disableProtected",
+          "--disableLifeCycleHooks"
+        ],
+        "styles": ["{projectRoot}/src/lib/styles/index.css"]
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "compodoc": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm compodoc -e json -d {projectRoot} -p {projectRoot}/tsconfig.json --disablePrivate --disableInternal --disableProtected --disableLifeCycleHooks"
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "{projectRoot}/dist/storybook/rainbow-components",
+        "configDir": "libs/my-lib/.storybook",
+        "browserTarget": "rainbow-components:build-storybook",
+        "compodoc": true,
+        "assets": ["{projectRoot}/src/assets"],
+        "compodocArgs": [
+          "-e",
+          "json",
+          "-d",
+          "{projectRoot}",
+          "-p {projectRoot}/tsconfig.json",
+          "--disablePrivate",
+          "--disableInternal",
+          "--disableProtected",
+          "--disableLifeCycleHooks"
+        ],
+        "styles": ["{projectRoot}/src/lib/styles/index.css"]
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    }
+  }
+}

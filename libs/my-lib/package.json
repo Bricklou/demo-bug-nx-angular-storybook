@@ -1,0 +1,42 @@
+{
+  "name": "my-lib",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "pnpm nx run build",
+    "storybook": "pnpm nx run storybook"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "peerDependencies": {
+    "@angular/cdk": "catalog:angular18",
+    "@angular/common": "catalog:angular18",
+    "@angular/core": "catalog:angular18",
+    "@angular/forms": "catalog:angular18",
+    "@angular/platform-browser": "catalog:angular18",
+    "@storybook/addon-docs": "catalog:storybook",
+    "@storybook/angular": "catalog:storybook",
+    "zone.js": "catalog:"
+  },
+  "devDependencies": {
+    "@angular/cdk": "catalog:angular18",
+    "@angular/common": "catalog:angular18",
+    "@angular/core": "catalog:angular18",
+    "@angular/forms": "catalog:angular18",
+    "@compodoc/compodoc": "catalog:",
+    "@nx/eslint-plugin": "catalog:",
+    "@storybook/addon-a11y": "catalog:storybook",
+    "@storybook/addon-docs": "catalog:storybook",
+    "@storybook/angular": "catalog:storybook",
+    "@storybook/test-runner": "catalog:storybook",
+    "@swc-node/register": "catalog:",
+    "@swc/core": "catalog:",
+    "@swc/helpers": "catalog:",
+    "ng-packagr": "catalog:angular18",
+    "prettier": "catalog:",
+    "rxjs": "catalog:",
+    "storybook": "catalog:storybook",
+    "tslib": "catalog:",
+    "typescript": "catalog:angular18",
+    "zone.js": "catalog:"
+  }
+}
