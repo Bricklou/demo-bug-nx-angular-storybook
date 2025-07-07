@@ -9,12 +9,11 @@
   },
   "devDependencies": {
     "@compodoc/compodoc": "catalog:",
-    "@nx/storybook": "catalog:",
-
     "@nx/angular": "catalog:",
     "@nx/eslint": "catalog:",
     "@nx/eslint-plugin": "catalog:",
     "@nx/js": "catalog:",
+    "@nx/storybook": "catalog:",
     "@nx/web": "catalog:",
     "@nx/workspace": "catalog:",
     "nx": "catalog:",
